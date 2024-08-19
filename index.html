@@ -30,6 +30,7 @@
         }
         section {
             padding: 20px;
+            margin-bottom: 60px; /* Add space for footer */
         }
         footer {
             background: #333;
@@ -39,6 +40,38 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+        }
+        .pdf-link {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .authors {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .author {
+            text-align: center;
+        }
+        .author img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .news {
+            margin-top: 30px;
+        }
+        .news h3 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
         }
     </style>
 </head>
@@ -61,6 +94,63 @@
 <section id="home">
     <h2>Welcome to the Text Watermarking Survey</h2>
     <p>This survey provides a comprehensive introduction of text watermarking techniques, with a focus on their applications in the era of Large Language Models (LLMs). Please use the navigation menu to explore different topics.</p>
+    
+    <a href="https://arxiv.org/pdf/2312.07913" class="pdf-link" target="_blank">Download PDF</a>
+
+    <div class="authors">
+        <h3>Authors</h3>
+        <div class="author">
+            <img src="path/to/author1.jpg" alt="Author 1">
+            <p><a href="https://scholar.google.com/citations?user=AUTHOR1_ID" target="_blank">Author 1</a></p>
+        </div>
+        <div class="author">
+            <img src="path/to/author2.jpg" alt="Author 2">
+            <p><a href="https://scholar.google.com/citations?user=AUTHOR2_ID" target="_blank">Author 2</a></p>
+        </div>
+        <div class="author">
+            <img src="path/to/author3.jpg" alt="Author 3">
+            <p><a href="https://scholar.google.com/citations?user=AUTHOR3_ID" target="_blank">Author 3</a></p>
+        </div>
+        <div class="author">
+            <img src="path/to/author4.jpg" alt="Author 4">
+            <p><a href="https://scholar.google.com/citations?user=AUTHOR4_ID" target="_blank">Author 4</a></p>
+        </div>
+        <div class="author">
+            <img src="path/to/author5.jpg" alt="Author 5">
+            <p><a href="https://scholar.google.com/citations?user=AUTHOR5_ID" target="_blank">Author 5</a></p>
+        </div>
+        <div class="author">
+            <img src="path/to/author6.jpg" alt="Author 6">
+            <p><a href="https://scholar.google.com/citations?user=AUTHOR6_ID" target="_blank">Author 6</a></p>
+        </div>
+        <div class="author">
+            <img src="path/to/author7.jpg" alt="Author 7">
+            <p><a href="https://scholar.google.com/citations?user=AUTHOR7_ID" target="_blank">Author 7</a></p>
+        </div>
+        <div class="author">
+            <img src="path/to/author8.jpg" alt="Author 8">
+            <p><a href="https://scholar.google.com/citations?user=AUTHOR8_ID" target="_blank">Author 8</a></p>
+        </div>
+        <div class="author">
+            <img src="path/to/author9.jpg" alt="Author 9">
+            <p><a href="https://scholar.google.com/citations?user=AUTHOR9_ID" target="_blank">Author 9</a></p>
+        </div>
+        <div class="author">
+            <img src="path/to/author10.jpg" alt="Author 10">
+            <p><a href="https://scholar.google.com/citations?user=AUTHOR10_ID" target="_blank">Author 10</a></p>
+        </div>
+        
+        <!-- Add more authors here, up to 10 -->
+    </div>
+
+    <div class="news">
+        <h3>Recent News</h3>
+        <ul>
+            <li>2024-08-15: Our paper has been accepted to XYZ Conference 2024!</li>
+            <li>2024-07-01: We released a new dataset for text watermarking evaluation.</li>
+            <li>2024-06-15: Our survey is now available on arXiv.</li>
+        </ul>
+    </div>
 </section>
 
 <footer>
