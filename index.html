@@ -57,7 +57,7 @@
         .citation pre {
             background: #f4f4f4;
             border: 1px solid #ddd;
-            border-left: 3px solid #f36d33;
+            border-left: 3px #000;
             page-break-inside: avoid;
             font-family: monospace;
             font-size: 15px;
@@ -68,15 +68,12 @@
             padding: 1em 1.5em;
             display: block;
             word-wrap: break-word;
+            padding-right: 3em;
         }
         .citation {
             margin-top: 30px;
             margin-bottom: 60px;
             position: relative;
-        }
-        .citation pre {
-            /* ... */
-            padding-right: 3em;
         }
         .copy-btn {
             display: inline-block;
@@ -100,8 +97,13 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 70%;
+            width: 60%;
             height: auto; 
+        }
+        .image-title {
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 30px;
         }
     </style>
 </head>
@@ -130,8 +132,15 @@
     <b>Watermarking for Existing Text</b>, embeds watermarks by post-processing pre-existing texts. This technique typically utilizes semantically invariant transformations for
     watermark integration. The second type, <b>Watermarking for Large Language Models</b>, involves
     modifying LLMs during training time or inference time.</p>
-    <img src="images/taxonomy_method.png" alt="taxonomy_method" class="centered-image">
-    <img src="images/method.png" alt="method" class="centered-image">
+    <div>
+        <img src="images/taxonomy_method.png" alt="Taxonomy of Text Watermarking Methods" class="centered-image">
+        <p class="image-title">Fig. 1: Taxonomy of Text Watermarking Methods.</p>
+    </div>
+    
+    <div>
+        <img src="images/method.png" alt="Comparison of Different Text Watermarking Methods" class="centered-image">
+        <p class="image-title">Fig. 2: Illustration of the two categories: Watermarking for Existing Text and Watermarking for LLMs.</p>
+    </div>
 
     <h3 id="evaluation">2. Evaluation Methods</h3>
     <p>Evaluation methods for text watermarking algorithms, including their detectability, impact on text or LLM quality, and robustness under target or untargeted attacks.</p>
@@ -147,12 +156,12 @@
     <div class="citation">
         <p>If you find our survey helpful, please cite it in your publications by clicking the Copy button below.</p>
         <pre>
-            @article{liu2023survey,
-                title={A survey of text watermarking in the era of large language models},
-                author={Liu, Aiwei and Pan, Leyi and Lu, Yijian and Li, Jingjing and Hu, Xuming and Wen, Lijie and King, Irwin and Yu, Philip S},
-                journal={arXiv preprint arXiv:2312.07913},
-                year={2023}
-              }
+@article{liu2023survey,
+    title={A survey of text watermarking in the era of large language models},
+    author={Liu, Aiwei and Pan, Leyi and Lu, Yijian and Li, Jingjing and Hu, Xuming and Wen, Lijie and King, Irwin and Yu, Philip S},
+    journal={arXiv preprint arXiv:2312.07913},
+    year={2023}
+}
         </pre>
         <button class="copy-btn" onclick="copyToClipboard()">Copy</button>
     </div>
