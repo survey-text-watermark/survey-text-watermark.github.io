@@ -10,6 +10,8 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            display: flex;
+            flex-direction: column;
         }
         header {
             background: #333;
@@ -106,10 +108,10 @@
             margin-bottom: 30px;
         }
         .card-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
         }
         .card {
             background-color: #f9f9f9;
@@ -118,7 +120,7 @@
             padding: 20px;
             width: 80%;
             box-sizing: border-box;
-            margin: 20px 0;
+            margin: 30px 0;
         }
         .card h3 {
             text-align: center;
@@ -151,6 +153,7 @@
     
     <p>In this survey, we take a closer look at the current landscape of text watermarking technology. We cover four key areas: </p>
     
+    <div class="card-container">
     <div class="card">
         <h3 id="techniques">Techniques Overview</h3>
         <p>We provide an overview and comparison of different text watermarking methods, categorizing them into two primary types. The first type,
@@ -198,6 +201,7 @@
             <img src="images/taxonomy_challenge.png" alt="Taxonomy of challenges" class="centered-image">
             <p class="image-title">Fig. 5: Taxonomy of Challenges and Future Directions for Text Watermarking.</p>
         </div>
+    </div>
     </div>
     
     <div class="citation">
