@@ -50,15 +50,34 @@
             border-radius: 5px;
             margin-top: 20px;
         }
-        .authors {
+        .citation {
             margin-top: 30px;
+            margin-bottom: 60px;
         }
-        .news {
-            margin-top: 30px;
+        .citation pre {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-left: 3px solid #f36d33;
+            page-break-inside: avoid;
+            font-family: monospace;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 1.6em;
+            max-width: 100%;
+            overflow: auto;
+            padding: 1em 1.5em;
+            display: block;
+            word-wrap: break-word;
         }
-        .news h3 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
+        .copy-btn {
+            display: inline-block;
+            background-color: #000;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -69,13 +88,10 @@
 </header>
 
 <nav>
-    <a href="introduction.html">Introduction</a>
-    <a href="preliminaries.html">Preliminaries</a>
-    <a href="existing-text.html">Watermarking for Existing Text</a>
-    <a href="llms.html">Watermarking for LLMs</a>
-    <a href="evaluation.html">Evaluation</a>
-    <a href="application.html">Application</a>
-    <a href="challenges.html">Challenges and Future Directions</a>
+    <a href="#home" style="display:none;">Home</a>
+    <a href="news.html">News</a>
+    <a href="people.html">People</a>
+    <a href="materials.html">Materials</a>
 </nav>
 
 <section id="home">
@@ -98,24 +114,37 @@
     
     <a href="https://arxiv.org/pdf/2312.07913" class="pdf-link" target="_blank">View PDF</a>
 
-    <div class="authors">
-        <h3>Authors</h3>
-        <hr>
-        <p>Aiwei Liu*, Leyi Pan*, Yijian Lu, Jingjing Li, Xuming Hu, Xi Zhang, Lijie Wen, Irwin King, Hui Xiong, Philip S. Yu</p>
+    <div class="citation">
+        <p>If you find our survey helpful, please cite it in your publications by clicking the Copy button below.</p>
+        <pre>
+@article{liuTextWatermarking2024,
+    title={Text Watermarking in the Era of Large Language Models},
+    author={Liu, Aiwei and Pan, Leyi and Lu, Yijian and Li, Jingjing and Hu, Xuming and Zhang, Xi and Wen, Lijie and King, Irwin and Xiong, Hui and Yu, Philip S.},
+    journal={arXiv preprint arXiv:2312.07913},
+    year={2024}
+}
+        </pre>
+        <button class="copy-btn" onclick="copyToClipboard()">Copy</button>
     </div>
 
-    <div class="news">
-        <h3>Recent News</h3>
-        <ul>
-            <li>2024-08-02: We added new works related to text watermarking from January to June 2024, making the survey more up-to-date. The latest version has been uploaded to arXiv.</li>
-            <li>2023-12-13: Our survey is now available on arXiv.</li>
-        </ul>
-    </div>
 </section>
 
 <footer>
     <p>© 2024 Text Watermarking Survey</p>
 </footer>
+
+<script>
+function copyToClipboard() {
+  const citation = document.querySelector('.citation pre').innerText;
+  navigator.clipboard.writeText(citation)
+    .then(() => {
+      alert("Citation copied to clipboard!");
+    })
+    .catch(err => {
+      console.error('Could not copy text: ', err);
+    });
+}
+</script>
 
 </body>
 </html>
