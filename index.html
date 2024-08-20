@@ -69,6 +69,15 @@
             display: block;
             word-wrap: break-word;
         }
+        .citation {
+            margin-top: 30px;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        .citation pre {
+            /* ... */
+            padding-right: 3em;
+        }
         .copy-btn {
             display: inline-block;
             background-color: #000;
@@ -78,6 +87,14 @@
             border-radius: 5px;
             margin-top: 10px;
             cursor: pointer;
+            position: absolute;
+            top: 1em;
+            right: 1em;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .citation:hover .copy-btn {
+            opacity: 1;
         }
     </style>
 </head>
@@ -99,7 +116,12 @@
     <p>In this survey, we take a closer look at the current landscape of text watermarking technology. We cover four key areas: </p>
  
     <h3 id="techniques">1. Techniques Overview</h3>
-    <p>An overview and comparison of different text watermarking methods.</p>
+    <p>We provide an overview and comparison of different text watermarking methods, categorizing them into two primary types. The first type,
+    <b>Watermarking for Existing Text</b>, embeds watermarks by post-processing pre-existing texts. This technique typically utilizes semantically invariant transformations for
+    watermark integration. The second type, <b>Watermarking for Large Language Models</b>, involves
+    modifying LLMs during training time or inference time.</p>
+    <img src="images/taxonomy_method.png" alt="taxonomy_method">
+    <img src="images/method.png" alt="method">
 
     <h3 id="evaluation">2. Evaluation Methods</h3>
     <p>Evaluation methods for text watermarking algorithms, including their detectability, impact on text or LLM quality, and robustness under target or untargeted attacks.</p>
@@ -117,12 +139,12 @@
     <div class="citation">
         <p>If you find our survey helpful, please cite it in your publications by clicking the Copy button below.</p>
         <pre>
-@article{liuTextWatermarking2024,
-    title={Text Watermarking in the Era of Large Language Models},
-    author={Liu, Aiwei and Pan, Leyi and Lu, Yijian and Li, Jingjing and Hu, Xuming and Zhang, Xi and Wen, Lijie and King, Irwin and Xiong, Hui and Yu, Philip S.},
-    journal={arXiv preprint arXiv:2312.07913},
-    year={2024}
-}
+            @article{liu2023survey,
+                title={A survey of text watermarking in the era of large language models},
+                author={Liu, Aiwei and Pan, Leyi and Lu, Yijian and Li, Jingjing and Hu, Xuming and Wen, Lijie and King, Irwin and Yu, Philip S},
+                journal={arXiv preprint arXiv:2312.07913},
+                year={2023}
+              }
         </pre>
         <button class="copy-btn" onclick="copyToClipboard()">Copy</button>
     </div>
