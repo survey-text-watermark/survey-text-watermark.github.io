@@ -41,43 +41,44 @@
             width: 100%;
             bottom: 0;
         }
-        .pdf-link {
-            display: inline-block;
-            background-color: #000; 
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
+        .authors-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
         }
-        .citation {
-            margin-top: 30px;
-            margin-bottom: 60px;
+        .author {
+            text-align: center;
+            width: calc(33.33% - 20px);
+            margin-bottom: 30px;
         }
-        .citation pre {
-            background: #f4f4f4;
-            border: 1px solid #ddd;
-            border-left: 3px solid #f36d33;
-            page-break-inside: avoid;
-            font-family: monospace;
-            font-size: 15px;
-            line-height: 1.6;
-            margin-bottom: 1.6em;
-            max-width: 100%;
-            overflow: auto;
-            padding: 1em 1.5em;
-            display: block;
-            word-wrap: break-word;
+        .author-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
         }
-        .copy-btn {
-            display: inline-block;
-            background-color: #000;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
+        .author-name {
             margin-top: 10px;
-            cursor: pointer;
+        }
+        .author-name a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .author-name a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .author {
+                width: calc(50% - 15px);
+            }
+        }
+        @media (max-width: 480px) {
+            .author {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -97,7 +98,48 @@
 <section id="people">
     <h2>Authors</h2>
     <hr>
-    <p>Aiwei Liu*, Leyi Pan*, Yijian Lu, Jingjing Li, Xuming Hu, Xi Zhang, Lijie Wen, Irwin King, Hui Xiong, Philip S. Yu</p>
+    <div class="authors-grid">
+        <div class="author">
+            <img src="https://via.placeholder.com/150" alt="Aiwei Liu" class="author-image">
+            <div class="author-name"><a href="#">Aiwei Liu</a></div>
+        </div>
+        <div class="author">
+            <img src="https://via.placeholder.com/150" alt="Leyi Pan" class="author-image">
+            <div class="author-name"><a href="#">Leyi Pan</a></div>
+        </div>
+        <div class="author">
+            <img src="https://via.placeholder.com/150" alt="Yijian Lu" class="author-image">
+            <div class="author-name"><a href="#">Yijian Lu</a></div>
+        </div>
+        <div class="author">
+            <img src="https://via.placeholder.com/150" alt="Jingjing Li" class="author-image">
+            <div class="author-name"><a href="#">Jingjing Li</a></div>
+        </div>
+        <div class="author">
+            <img src="https://via.placeholder.com/150" alt="Xuming Hu" class="author-image">
+            <div class="author-name"><a href="#">Xuming Hu</a></div>
+        </div>
+        <div class="author">
+            <img src="https://via.placeholder.com/150" alt="Xi Zhang" class="author-image">
+            <div class="author-name"><a href="#">Xi Zhang</a></div>
+        </div>
+        <div class="author">
+            <img src="https://via.placeholder.com/150" alt="Lijie Wen" class="author-image">
+            <div class="author-name"><a href="#">Lijie Wen</a></div>
+        </div>
+        <div class="author">
+            <img src="https://via.placeholder.com/150" alt="Irwin King" class="author-image">
+            <div class="author-name"><a href="#">Irwin King</a></div>
+        </div>
+        <div class="author">
+            <img src="https://via.placeholder.com/150" alt="Hui Xiong" class="author-image">
+            <div class="author-name"><a href="#">Hui Xiong</a></div>
+        </div>
+        <div class="author">
+            <img src="https://via.placeholder.com/150" alt="Philip S. Yu" class="author-image">
+            <div class="author-name"><a href="#">Philip S. Yu</a></div>
+        </div>
+    </div>
 </section>
 
 <footer>
