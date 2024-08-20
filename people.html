@@ -45,16 +45,16 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 30px;
+            gap: 20px;
         }
         .author {
             text-align: center;
-            width: calc(25% - 20px);
+            width: calc(25% - 15px);
             margin-bottom: 30px;
         }
         .author-image {
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 10px;
@@ -70,9 +70,14 @@
         .author-name a:hover {
             text-decoration: underline;
         }
+        @media (max-width: 1024px) {
+            .author {
+                width: calc(33.33% - 13.33px);
+            }
+        }
         @media (max-width: 768px) {
             .author {
-                width: calc(50% - 15px);
+                width: calc(50% - 10px);
             }
         }
         @media (max-width: 480px) {
@@ -101,43 +106,43 @@
     <br>
     <div class="authors-grid">
         <div class="author">
-            <img src="https://via.placeholder.com/150" alt="Aiwei Liu" class="author-image">
+            <img src="https://via.placeholder.com/120" alt="Aiwei Liu" class="author-image">
             <div class="author-name"><a href="#">Aiwei Liu</a></div>
         </div>
         <div class="author">
-            <img src="https://via.placeholder.com/150" alt="Leyi Pan" class="author-image">
+            <img src="https://via.placeholder.com/120" alt="Leyi Pan" class="author-image">
             <div class="author-name"><a href="#">Leyi Pan</a></div>
         </div>
         <div class="author">
-            <img src="https://via.placeholder.com/150" alt="Yijian Lu" class="author-image">
+            <img src="https://via.placeholder.com/120" alt="Yijian Lu" class="author-image">
             <div class="author-name"><a href="#">Yijian Lu</a></div>
         </div>
         <div class="author">
-            <img src="https://via.placeholder.com/150" alt="Jingjing Li" class="author-image">
+            <img src="https://via.placeholder.com/120" alt="Jingjing Li" class="author-image">
             <div class="author-name"><a href="#">Jingjing Li</a></div>
         </div>
         <div class="author">
-            <img src="https://via.placeholder.com/150" alt="Xuming Hu" class="author-image">
+            <img src="https://via.placeholder.com/120" alt="Xuming Hu" class="author-image">
             <div class="author-name"><a href="#">Xuming Hu</a></div>
         </div>
         <div class="author">
-            <img src="https://via.placeholder.com/150" alt="Xi Zhang" class="author-image">
+            <img src="https://via.placeholder.com/120" alt="Xi Zhang" class="author-image">
             <div class="author-name"><a href="#">Xi Zhang</a></div>
         </div>
         <div class="author">
-            <img src="https://via.placeholder.com/150" alt="Lijie Wen" class="author-image">
+            <img src="https://via.placeholder.com/120" alt="Lijie Wen" class="author-image">
             <div class="author-name"><a href="#">Lijie Wen</a></div>
         </div>
         <div class="author">
-            <img src="https://via.placeholder.com/150" alt="Irwin King" class="author-image">
+            <img src="https://via.placeholder.com/120" alt="Irwin King" class="author-image">
             <div class="author-name"><a href="#">Irwin King</a></div>
         </div>
         <div class="author">
-            <img src="https://via.placeholder.com/150" alt="Hui Xiong" class="author-image">
+            <img src="https://via.placeholder.com/120" alt="Hui Xiong" class="author-image">
             <div class="author-name"><a href="#">Hui Xiong</a></div>
         </div>
         <div class="author">
-            <img src="https://via.placeholder.com/150" alt="Philip S. Yu" class="author-image">
+            <img src="https://via.placeholder.com/120" alt="Philip S. Yu" class="author-image">
             <div class="author-name"><a href="#">Philip S. Yu</a></div>
         </div>
     </div>
