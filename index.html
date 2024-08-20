@@ -118,7 +118,7 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             padding: 20px;
-            width: 80%;
+            width: 90%;
             box-sizing: border-box;
             margin: 30px 0;
         }
@@ -156,27 +156,43 @@
     <div class="card-container">
     <div class="card">
         <h3 id="techniques">Techniques Overview</h3>
-        <p>We provide an overview and comparison of different text watermarking methods, categorizing them into two primary types. The first type,
-        <b>Watermarking for Existing Text</b>, embeds watermarks by post-processing pre-existing texts. This technique typically utilizes semantically invariant transformations for
-        watermark integration. The second type, <b>Watermarking for Large Language Models</b>, involves
-        modifying LLMs during training time or inference time.</p>
+        <p>We provide an overview and comparison of different text watermarking methods, categorizing them into two primary types: <b>Watermarking for Existing Text</b> and <b>Watermarking for Large Language Models</b>. </p>
+        
+            <div>
+            <img src="images/method.png" alt="Comparison of Different Text Watermarking Methods" class="centered-image">
+            <p class="image-title">Fig. 2: Illustration of the two categories: Watermarking for Existing Text and Watermarking for LLMs.</p>
+        </div>
+
+        <ul>
+            <li><b>Watermarking for Existing Text</b> embeds watermarks by post-processing pre-existing texts.</li>
+                <ul>
+                    <li><b>Format-based Watermarking</b> changes text format rather than its content to embed watermarks.</li>
+                    <li><b>Lexical-based Watermarking</b> involves replacing selected words with their synonyms to embed watermarks.</li>
+                    <li><b>Syntactic-based Watermarking</b> modifies the text's syntax structure to insert watermarks.</li>
+                    <li><b>Generation-based Watermarking</b> utilizes neural networks to directly generate watermarked text given original text and watermark message.</li>
+                </ul>
+            <li><b>Watermarking for Large Language Models</b> involves modifying LLMs and let LLMs directly produce watermarked text.</li>
+                <ul>
+                    <li><b>Watermarking during Logits Generation</b> involves modifying the LLM logits to embed watermarks.</li>
+                    <li><b>Watermarking during Token Sampling</b> alters the token sampling process to add watermarks.</li>
+                    <li><b>Watermarking during LLM Training</b> involves changing the LLM parameters to embed watermarks.</li>
+                </ul>
+        </ul>
+        
         <div>
             <img src="images/taxonomy_method.png" alt="Taxonomy of Text Watermarking Methods" class="centered-image">
             <p class="image-title">Fig. 1: Taxonomy of Text Watermarking Methods.</p>
         </div>
         
-        <div>
-            <img src="images/method.png" alt="Comparison of Different Text Watermarking Methods" class="centered-image">
-            <p class="image-title">Fig. 2: Illustration of the two categories: Watermarking for Existing Text and Watermarking for LLMs.</p>
-        </div>
+        
     </div>
     
     <div class="card">
         <h3 id="evaluation">Evaluation Methods</h3>
         <p>We provide summarization of the evaluation metrics for text watermarking algorithms from multipule perspectives: 
-            (1) the detectability of watermarking algorithms, 
-            (2) the impact of watermarking on the quality of targeted texts,
-            (3) the robustness of watermarking algorithms against untargeted and targeted attacks.</p>
+            (1) the <b>detectability</b> of watermarking algorithms, 
+            (2) the impact of watermarking on the <b>quality</b> of targeted texts or LLMs,
+            (3) the <b>robustness</b> of watermarking algorithms against untargeted and targeted attacks.</p>
     
         <div>
             <img src="images/taxonomy_evaluation.png" alt="Taxonomy of Evaluation Metrics" class="centered-image">
@@ -186,11 +202,26 @@
     
     <div class="card">
         <h3 id="applications">Application Scenarios</h3>
-        <p>Potential application scenarios for text watermarking technology, including copyright protection and AI-generated text detection.</p>
+        <p>Potential application scenarios for text watermarking technology, including <b>copyright protection</b> and <b>AI-generated text detection</b>.</p>
         <div>
             <img src="images/taxonomy_application.png" alt="Taxonomy of application" class="centered-image">
             <p class="image-title">Fig. 4: Taxonomy of Application Scenarios for Text Watermarking.</p>
         </div>
+        <ul>
+            <li><b>Copyright Protection</b>: Ensures creators have exclusive rights to their content and helps identify the source of text.</p>
+                <ul>
+                    <li>Text Copyright</li>
+                    <li>Dataset Copyright</li>
+                    <li>LLM Copyright</li>
+                </ul>
+            </li>
+            <li><b>AI-Generated Text Detection</b>: Helps identify text produced by LLMs to address issues like:</p>
+                <ul>
+                    <li>Academic Integrity</li>
+                    <li>Misinformation Detection</li>
+                </ul>
+            </li>
+        </ul>
     </div>
 
     <div class="card">
