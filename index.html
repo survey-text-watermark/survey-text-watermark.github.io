@@ -53,53 +53,12 @@
         .authors {
             margin-top: 30px;
         }
-        .author-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            gap: 20px;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .author {
-            text-align: center;
-            background-color: #f9f9f9;
-            padding: 15px;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-        }
-        .author:hover {
-            transform: translateY(-5px);
-        }
-        .author img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 10px;
-        }
-        .author p {
-            margin: 0;
-            font-size: 0.9em;
-        }
-        .author a {
-            color: #0066cc;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .author a:hover {
-            text-decoration: underline;
-        }
         .news {
             margin-top: 30px;
         }
         .news h3 {
             border-bottom: 2px solid #333;
             padding-bottom: 10px;
-        }
-        @media (max-width: 600px) {
-            .author-grid {
-                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-            }
         }
     </style>
 </head>
@@ -120,64 +79,36 @@
 </nav>
 
 <section id="home">
-    <h2>Welcome to the Text Watermarking Survey</h2>
-    <p>This survey provides a comprehensive introduction of text watermarking techniques, with a focus on their applications in the era of Large Language Models (LLMs). Please use the navigation menu to explore different topics.</p>
+    <p>Text watermarking algorithms play a vital role in protecting the copyright of written content. While these techniques have come a long way, recent advancements in large language models (LLMs) have opened up new possibilities. LLMs not only improve watermarking methods but also highlight the need to safeguard their own creations from misuse.</p>
+    <p>In this survey, we take a closer look at the current landscape of text watermarking technology. We cover four key areas: </p>
+ 
+    <h3 id="techniques">1. Techniques Overview</h3>
+    <p>An overview and comparison of different text watermarking methods.</p>
+
+    <h3 id="evaluation">2. Evaluation Methods</h3>
+    <p>Evaluation methods for text watermarking algorithms, including their detectability, impact on text or LLM quality, and robustness under target or untargeted attacks.</p>
+
+    <h3 id="applications">3. Application Scenarios</h3>
+    <p>Potential application scenarios for text watermarking technology, including copyright protection and AI-generated text detection.</p>
+
+    <h3 id="challenges">4. Challenges & Future Directions</h3>
+    <p>Current challenges and future directions for text watermarking, including trade-offs in text watrmarking algorithm design, challenging scenarios for text watermarking algorithms, and challenges in applying watermark with no extra burden.</p>
+
+    <p>Please use the navigation menu to explore different topics.</p>
     
     <a href="https://arxiv.org/pdf/2312.07913" class="pdf-link" target="_blank">View PDF</a>
 
     <div class="authors">
         <h3>Authors</h3>
         <hr>
-        <div class="author-grid">
-            <div class="author">
-                <img src="path/to/author1.jpg" alt="Author 1">
-                <p><a href="https://scholar.google.com/citations?user=AUTHOR1_ID" target="_blank">Author 1</a></p>
-            </div>
-            <div class="author">
-                <img src="path/to/author2.jpg" alt="Author 2">
-                <p><a href="https://scholar.google.com/citations?user=AUTHOR2_ID" target="_blank">Author 2</a></p>
-            </div>
-            <div class="author">
-                <img src="path/to/author3.jpg" alt="Author 3">
-                <p><a href="https://scholar.google.com/citations?user=AUTHOR3_ID" target="_blank">Author 3</a></p>
-            </div>
-            <div class="author">
-                <img src="path/to/author4.jpg" alt="Author 4">
-                <p><a href="https://scholar.google.com/citations?user=AUTHOR4_ID" target="_blank">Author 4</a></p>
-            </div>
-            <div class="author">
-                <img src="path/to/author5.jpg" alt="Author 5">
-                <p><a href="https://scholar.google.com/citations?user=AUTHOR5_ID" target="_blank">Author 5</a></p>
-            </div>
-            <div class="author">
-                <img src="path/to/author6.jpg" alt="Author 6">
-                <p><a href="https://scholar.google.com/citations?user=AUTHOR6_ID" target="_blank">Author 6</a></p>
-            </div>
-            <div class="author">
-                <img src="path/to/author7.jpg" alt="Author 7">
-                <p><a href="https://scholar.google.com/citations?user=AUTHOR7_ID" target="_blank">Author 7</a></p>
-            </div>
-            <div class="author">
-                <img src="path/to/author8.jpg" alt="Author 8">
-                <p><a href="https://scholar.google.com/citations?user=AUTHOR8_ID" target="_blank">Author 8</a></p>
-            </div>
-            <div class="author">
-                <img src="path/to/author9.jpg" alt="Author 9">
-                <p><a href="https://scholar.google.com/citations?user=AUTHOR9_ID" target="_blank">Author 9</a></p>
-            </div>
-            <div class="author">
-                <img src="path/to/author10.jpg" alt="Author 10">
-                <p><a href="https://scholar.google.com/citations?user=AUTHOR10_ID" target="_blank">Author 10</a></p>
-            </div>
-        </div>
+        <p>Author 1, Author 2, Author 3, Author 4, Author 5, Author 6, Author 7, Author 8, Author 9, Author 10</p>
     </div>
 
     <div class="news">
         <h3>Recent News</h3>
         <ul>
-            <li>2024-08-15: Our paper has been accepted to XYZ Conference 2024!</li>
-            <li>2024-07-01: We released a new dataset for text watermarking evaluation.</li>
-            <li>2024-06-15: Our survey is now available on arXiv.</li>
+            <li>2024-08-02: We added new works related to text watermarking from January to June 2024, making the survey more up-to-date. The latest version has been uploaded to arXiv.</li>
+            <li>2023-12-13: Our survey is now available on arXiv.</li>
         </ul>
     </div>
 </section>
