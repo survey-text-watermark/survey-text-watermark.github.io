@@ -14,7 +14,7 @@
         header {
             background: #333;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
         }
         nav {
@@ -31,6 +31,9 @@
         section {
             padding: 20px;
             margin-bottom: 60px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
         footer {
             background: #333;
@@ -41,43 +44,24 @@
             width: 100%;
             bottom: 0;
         }
-        .pdf-link {
-            display: inline-block;
-            background-color: #000; 
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
+        .update {
+            background-color: #f0f0f0;
+            border-left: 5px solid #666;
+            padding: 15px;
+            margin-bottom: 20px;
             border-radius: 5px;
-            margin-top: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .citation {
-            margin-top: 30px;
-            margin-bottom: 60px;
+        .update-date {
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 10px;
         }
-        .citation pre {
-            background: #f4f4f4;
-            border: 1px solid #ddd;
-            border-left: 3px solid #f36d33;
-            page-break-inside: avoid;
-            font-family: monospace;
-            font-size: 15px;
-            line-height: 1.6;
-            margin-bottom: 1.6em;
-            max-width: 100%;
-            overflow: auto;
-            padding: 1em 1.5em;
-            display: block;
-            word-wrap: break-word;
-        }
-        .copy-btn {
-            display: inline-block;
-            background-color: #000;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
+        .update-content {
             margin-top: 10px;
-            cursor: pointer;
+        }
+        ul, ol {
+            padding-left: 20px;
         }
     </style>
 </head>
@@ -96,10 +80,32 @@
 
 <section id="news">
     <h2>Recent News</h2>
-    <ul>
-        <li>2024-08-02: We added new works related to text watermarking from January to June 2024, making the survey more up-to-date. The latest version has been uploaded to arXiv.</li>
-        <li>2023-12-13: Our survey is now available on arXiv.</li>
-    </ul>
+    
+    <div class="update">
+        <p class="update-date">2024-08-02</p>
+        <div class="update-content">
+            <ul>
+                <li>Added new works related to text watermarking from January to June 2024.</li>
+                <li>Included more detailed mind maps (Figures 4, 6, 7, and 8) in sections on Watermarking for Existing Text and Watermarking for LLMs.</li>
+                <li>Significant adjustments to the evaluation section:
+                    <ul>
+                        <li>Added a taxonomy (Figure 9) organizing all evaluation metrics.</li>
+                        <li>Included Tables 2 and 3 for detailed analysis of metrics and attack algorithms.</li>
+                        <li>Added Section 5.7 outlining key benchmarks and tools for text watermarking.</li>
+                    </ul>
+                </li>
+                <li>Reorganized challenges and future directions section to focus more on technical challenges.</li>
+            </ul>
+            <p>The latest version has been uploaded to arXiv.</p>
+        </div>
+    </div>
+
+    <div class="update">
+        <p class="update-date">2023-12-13</p>
+        <div class="update-content">
+            <p>Our survey is now available on arXiv.</p>
+        </div>
+    </div>
 </section>
 
 <footer>
