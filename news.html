@@ -6,59 +6,79 @@
     <title>News - Text Watermarking Survey</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f4f8;
+            color: #333;
         }
         header {
-            background: #333;
+            background: linear-gradient(135deg, #2c3e50, #34495e);
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         nav {
-            background: #444;
+            background: #34495e;
             color: #fff;
-            padding: 10px;
+            padding: 15px;
             text-align: center;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         nav a {
             color: #fff;
-            margin: 0 10px;
+            margin: 0 15px;
             text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #3498db;
         }
         section {
-            padding: 20px;
-            margin-bottom: 60px;
+            padding: 40px;
+            margin-bottom: 80px;
+            max-width: 1000px;
+            width: 90%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
         }
         footer {
-            background: #333;
+            background: linear-gradient(135deg, #2c3e50, #34495e);
             color: #fff;
             text-align: center;
-            padding: 10px 0;
+            padding: 15px 0;
             position: fixed;
             width: 100%;
             bottom: 0;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
         }
         .update {
-            background-color: #f0f0f0;
-            border-left: 5px solid #666;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background-color: #f9f9f9;
+            border-left: 5px solid #3498db;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.05);
         }
         .update-date {
             font-weight: bold;
-            color: #444;
-            margin-bottom: 10px;
+            color: #2c3e50;
+            margin-bottom: 15px;
         }
         .update-content {
-            margin-top: 10px;
+            margin-top: 15px;
         }
         ul, ol {
-            padding-left: 20px;
+            padding-left: 25px;
         }
     </style>
 </head>
